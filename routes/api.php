@@ -24,4 +24,4 @@ Route::get('/getCourses',[CourseController::class,'readAllCourses']);
 Route::get('/getCourse/{id}',[CourseController::class,'readCourse']);
 Route::put('/update-Course/{id}',[CourseController::class,'updateCourse']);
 
-Route::delete('/delete-Course',[CourseController::class,'deleteCourse']);
+Route::delete('/delete-Course/{id}',[CourseController::class,'deleteCourse']);
